@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio of Moksha Zala, a Senior iOS Engineer working with Swift, SwiftUI and UIKit.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Moksha Zala | Senior iOS Engineer</title>
+  <style>
+    :root{--blue:#0071e3;--blue-dark:#0058b0;--ink:#1d1d1f;--muted:#6e6e73;--soft:#f5f5f7;--line:#d2d2d7;--white:#fff;--shadow:0 18px 50px rgba(0,0,0,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--white);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}button,a{touch-action:manipulation}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(18px);border-bottom:1px solid rgba(0,0,0,.08)}
+    .nav-inner{height:64px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;text-decoration:none;letter-spacing:-.02em}.links{display:flex;gap:25px;align-items:center}.links a{text-decoration:none;font-size:14px;color:#424245}.links a:hover{color:var(--blue)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 20px;text-decoration:none;font-weight:650;font-size:15px;transition:.2s ease;border:1px solid var(--blue)}.button.primary{background:var(--blue);color:white}.button.primary:hover{background:var(--blue-dark);transform:translateY(-1px)}.button.secondary{color:var(--blue);background:white}.button.secondary:hover{background:#f0f7ff}
+    .hero{padding:118px 0 104px;background:radial-gradient(circle at 78% 10%,#dceeff 0,rgba(220,238,255,0) 32%),linear-gradient(180deg,#fff 0,#f7fbff 100%)}
+    .eyebrow{margin:0 0 14px;color:var(--blue);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(50px,8vw,88px);line-height:.96;letter-spacing:-.055em;margin:0;max-width:850px}.hero .lede{font-size:clamp(20px,2.6vw,28px);line-height:1.35;letter-spacing:-.02em;color:#424245;max-width:790px;margin:30px 0 34px}.actions{display:flex;flex-wrap:wrap;gap:12px}
+    section{padding:92px 0}.soft{background:var(--soft)}.section-head{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;margin-bottom:42px}.section-head h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.045em;line-height:1.02;margin:0}.section-head p{color:var(--muted);font-size:18px;line-height:1.6;margin:3px 0 0}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project{overflow:hidden;background:white;border:1px solid rgba(0,0,0,.08);border-radius:26px;box-shadow:0 2px 8px rgba(0,0,0,.02);transition:.2s ease}.project:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.project-cover{height:310px;background:#e8f3ff;display:grid;place-items:center;overflow:hidden}.project-cover img{width:100%;height:100%;object-fit:cover;object-position:top}.project-cover.phone img{width:48%;height:auto;max-height:94%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(0,0,0,.2))}.code-cover{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:40px;background:linear-gradient(145deg,#07192d,#003f7f);color:white}.code-cover small{color:#69b5ff;font:600 13px ui-monospace,monospace}.code-cover strong{font-size:clamp(28px,4vw,44px);letter-spacing:-.04em;margin:12px 0}.code-cover span{color:#c8e5ff;font:15px ui-monospace,monospace}.project-body{padding:27px}.project-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.project h3{font-size:24px;margin:0 0 10px;letter-spacing:-.03em}.project p{color:var(--muted);line-height:1.6;margin:0}.status{font-size:11px;white-space:nowrap;background:#e8f3ff;color:var(--blue);border-radius:999px;padding:7px 10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.tag{font-size:12px;background:var(--soft);border-radius:999px;padding:7px 10px;color:#515154}.project-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px}.project-links a{color:var(--blue);font-weight:650;font-size:14px;text-decoration:none}.project-links a:hover{text-decoration:underline}.more-projects{text-align:center;margin-top:34px}
+    .timeline{max-width:880px}.job{display:grid;grid-template-columns:185px 1fr;gap:32px;padding:28px 0;border-top:1px solid var(--line)}.job:last-child{border-bottom:1px solid var(--line)}.job time{font-size:14px;color:var(--muted);line-height:1.5}.job h3{margin:0 0 6px;font-size:21px}.job .company{color:var(--blue);font-weight:650;margin:0 0 10px}.job p{color:var(--muted);line-height:1.6;margin:0}
+    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.about h2{font-size:clamp(36px,5vw,56px);letter-spacing:-.045em;line-height:1.04;margin:0 0 25px}.about p{font-size:18px;line-height:1.7;color:#424245}.skills{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}.skill{padding:11px 14px;border:1px solid var(--line);border-radius:12px;font-size:14px;background:white}
+    .contact{padding:90px 0;text-align:center;background:var(--blue);color:white}.contact h2{font-size:clamp(38px,6vw,64px);letter-spacing:-.05em;margin:0 0 18px}.contact p{font-size:19px;line-height:1.55;max-width:650px;margin:0 auto 30px;color:rgba(255,255,255,.84)}.contact .button{background:white;color:var(--blue);border-color:white}.contact-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:24px}.contact-links a{color:white;text-underline-offset:4px}
+    footer{padding:30px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:780px){.links a:not(.nav-cta){display:none}.hero{padding:82px 0 76px}.section-head,.about{grid-template-columns:1fr;gap:24px}.projects{grid-template-columns:1fr}.project-cover{height:270px}.job{grid-template-columns:1fr;gap:8px}section{padding:68px 0}.wrap{width:min(100% - 28px,1120px)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.button{transition:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Moksha Zala</a>
+      <div class="links">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
+        <a class="button primary nav-cta" href="Moksha-Zala-Resume.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Senior iOS Engineer</p>
+        <h1>Building useful, reliable apps for Apple platforms.</h1>
+        <p class="lede">Hello, I’m Moksha. I’m an iOS engineer with 7+ years of experience working on production mobile applications using Swift, SwiftUI and UIKit. I enjoy turning product requirements into reliable, easy-to-use features and collaborating with teams from development through release.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">View my work</a>
+          <a class="button secondary" href="Moksha-Zala-Resume.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Featured projects</h2>
+          <p>Two current projects that demonstrate real-time AI integration, iOS architecture and reliable UI testing. More projects are available on my GitHub profile.</p>
+        </div>
+        <div class="projects">
+          <article class="project">
+            <div class="project-cover phone"><img src="https://github.com/user-attachments/assets/5986f97d-4316-4e5c-9695-8d88644afd7b" alt="Agora AI Voice Assistant iOS interface" loading="lazy"></div>
+            <div class="project-body"><div class="project-top"><h3>Agora AI Voice Assistant</h3><span class="status">Current</span></div><p>A two-way conversational voice experience built with SwiftUI and Agora RTC, supported by a FastAPI backend that manages secure tokens and the AI agent lifecycle.</p><div class="tags"><span class="tag">SwiftUI</span><span class="tag">Agora RTC</span><span class="tag">FastAPI</span><span class="tag">Gemini</span></div><div class="project-links"><a href="https://github.com/livedz/AgoraTest-iOS" target="_blank" rel="noreferrer">iOS repository ↗</a><a href="https://github.com/livedz/AgoraBackend" target="_blank" rel="noreferrer">Backend repository ↗</a></div></div>
+          </article>
+          <article class="project">
+            <div class="project-cover"><div class="code-cover"><small>SWIFT PACKAGE</small><strong>MockFileServer</strong><span>URLProtocol → local JSON → reliable UI tests</span></div></div>
+            <div class="project-body"><div class="project-top"><h3>MockFileServer</h3><span class="status">Package</span></div><p>A dependency-free Swift package that intercepts URLSession requests during UI tests, supports REST and GraphQL, and returns predictable local responses.</p><div class="tags"><span class="tag">Swift 6</span><span class="tag">URLProtocol</span><span class="tag">SPM</span><span class="tag">UI Testing</span></div><div class="project-links"><a href="https://github.com/livedz/MockFileServer" target="_blank" rel="noreferrer">View repository ↗</a></div></div>
+          </article>
+        </div>
+        <div class="more-projects"><a class="button secondary" href="https://github.com/livedz?tab=repositories" target="_blank" rel="noreferrer">View all GitHub projects</a></div>
+      </div>
+    </section>
+
+    <section id="experience" class="soft">
+      <div class="wrap">
+        <div class="section-head"><h2>Experience</h2><p>Production mobile development across native iOS and cross-platform teams, from early implementation to ongoing maintenance and delivery.</p></div>
+        <div class="timeline">
+          <article class="job"><time>2023 - 2026</time><div><h3>Senior iOS Engineer</h3><p class="company">Talent Systems LLC</p><p>Developed and maintained iOS features for Spotlight, Casting Networks and StaffMeUp using Swift, SwiftUI and UIKit.</p></div></article>
+          <article class="job"><time>2022 - 2023</time><div><h3>iOS Developer</h3><p class="company">Spontaneous Enterprise</p><p>Worked as the primary iOS developer on a Swift and UIKit application from early development through App Store release.</p></div></article>
+          <article class="job"><time>2016 - 2022</time><div><h3>Mobile &amp; iOS Developer</h3><p class="company">Intricare Technologies · Stemmons Enterprise · Kit Solution</p><p>Built native Swift and UIKit modules, cross-platform Xamarin.Forms features, and integrations using Apple frameworks and REST services.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <div><p class="eyebrow">About</p><h2>Thoughtful engineering, steady collaboration.</h2><p>I like understanding the reason behind a feature before deciding how to build it. In day-to-day work, that means asking clear questions, keeping code maintainable, testing the important paths and communicating openly when trade-offs appear.</p><p>I’m comfortable working with distributed teams and contributing across architecture, implementation, debugging and release work.</p></div>
+        <div class="skills" aria-label="Technical skills"><span class="skill">Swift</span><span class="skill">SwiftUI</span><span class="skill">UIKit</span><span class="skill">Swift Concurrency</span><span class="skill">Combine</span><span class="skill">AVFoundation</span><span class="skill">Core Data</span><span class="skill">REST</span><span class="skill">GraphQL</span><span class="skill">MVVM</span><span class="skill">Coordinator</span><span class="skill">XCTest</span><span class="skill">XCUITest</span><span class="skill">Instruments</span><span class="skill">Fastlane</span><span class="skill">GitHub</span></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap"><h2>Let’s connect.</h2><p>If you’d like to discuss an iOS role or a mobile product, you can reach me by email or LinkedIn.</p><a class="button" href="mailto:livedz05@gmail.com">livedz05@gmail.com</a><div class="contact-links"><a href="https://www.linkedin.com/in/mokshag" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/livedz" target="_blank" rel="noreferrer">GitHub</a><a href="Moksha-Zala-Resume.pdf" download>Download CV</a></div></div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>© <span id="year"></span> Moksha Zala</span><span>Designed and built for the web.</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
