@@ -20,9 +20,10 @@
     .timeline{max-width:880px}.job{display:grid;grid-template-columns:185px 1fr;gap:32px;padding:28px 0;border-top:1px solid var(--line)}.job:last-child{border-bottom:1px solid var(--line)}.job time{font-size:14px;color:var(--muted);line-height:1.5}.job h3{margin:0 0 6px;font-size:21px}.job .company{color:var(--blue);font-weight:650;margin:0 0 10px}.job p{color:var(--muted);line-height:1.6;margin:0}
     .about{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.about h2{font-size:clamp(36px,5vw,56px);letter-spacing:-.045em;line-height:1.04;margin:0 0 25px}.about p{font-size:18px;line-height:1.7;color:#424245}.skills{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}.skill{padding:11px 14px;border:1px solid var(--line);border-radius:12px;font-size:14px;background:white}
     .contact{padding:90px 0;text-align:center;background:var(--blue);color:white}.contact h2{font-size:clamp(38px,6vw,64px);letter-spacing:-.05em;margin:0 0 18px}.contact p{font-size:19px;line-height:1.55;max-width:650px;margin:0 auto 30px;color:rgba(255,255,255,.84)}.contact .button{background:white;color:var(--blue);border-color:white}.contact-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:24px}.contact-links a{color:white;text-underline-offset:4px}
+    .medium-card{max-width:650px;margin:48px auto 0;padding:30px 28px;border:1px solid rgba(255,255,255,.35);border-radius:24px;background:rgba(255,255,255,.1)}.medium-card .label{margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75)}.medium-card h3{margin:0 0 10px;font-size:26px;letter-spacing:-.03em}.medium-card p{font-size:17px;margin:0 auto 22px}
     footer{padding:30px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     @media(max-width:780px){.links a:not(.nav-cta){display:none}.hero{padding:82px 0 76px}.section-head,.about{grid-template-columns:1fr;gap:24px}.projects{grid-template-columns:1fr}.project-cover{height:270px}.job{grid-template-columns:1fr;gap:8px}section{padding:68px 0}.wrap{width:min(100% - 28px,1120px)}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.button{transition:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project,.button{transition:none}}
   </style>
 </head>
 <body>
@@ -30,7 +31,7 @@
     <div class="wrap nav-inner">
       <a class="brand" href="#top">Moksha Zala</a>
       <div class="links">
-        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#writing">Writing</a>
         <a class="button primary nav-cta" href="Moksha-Zala-Resume.pdf" download>Download CV</a>
       </div>
     </div>
@@ -41,7 +42,7 @@
       <div class="wrap">
         <p class="eyebrow">Senior iOS Engineer</p>
         <h1>Building useful, reliable apps for Apple platforms.</h1>
-        <p class="lede">Hello, I’m Moksha. I’m an iOS engineer with 7+ years of experience working on production mobile applications using Swift, SwiftUI and UIKit. I enjoy turning product requirements into reliable, easy-to-use features and collaborating with teams from development through release.</p>
+        <p class="lede">Hello, I’m Moksha. I’m an iOS engineer with 9+ years in mobile development, including 6+ years of native iOS, building production apps with Swift, UIKit and SwiftUI. I enjoy turning product requirements into reliable, easy-to-use features and collaborating with teams from development through release.</p>
         <div class="actions">
           <a class="button primary" href="#work">View my work</a>
           <a class="button secondary" href="Moksha-Zala-Resume.pdf" download>Download CV</a>
@@ -73,9 +74,9 @@
       <div class="wrap">
         <div class="section-head"><h2>Experience</h2><p>Production mobile development across native iOS and cross-platform teams, from early implementation to ongoing maintenance and delivery.</p></div>
         <div class="timeline">
-          <article class="job"><time>2023 - 2026</time><div><h3>Senior iOS Engineer</h3><p class="company">Talent Systems LLC</p><p>Developed and maintained iOS features for Spotlight, Casting Networks and StaffMeUp using Swift, SwiftUI and UIKit.</p></div></article>
-          <article class="job"><time>2022 - 2023</time><div><h3>iOS Developer</h3><p class="company">Spontaneous Enterprise</p><p>Worked as the primary iOS developer on a Swift and UIKit application from early development through App Store release.</p></div></article>
-          <article class="job"><time>2016 - 2022</time><div><h3>Mobile &amp; iOS Developer</h3><p class="company">Intricare Technologies · Stemmons Enterprise · Kit Solution</p><p>Built native Swift and UIKit modules, cross-platform Xamarin.Forms features, and integrations using Apple frameworks and REST services.</p></div></article>
+          <article class="job"><time>Feb 2023 - Feb 2026</time><div><h3>iOS Engineer</h3><p class="company">Talent Systems LLC</p><p>Owned iOS features for StaffMeUp, Spotlight and Casting Networks using Swift, UIKit and SwiftUI, with an MVVM + Coordinator modular architecture, Swift Concurrency, and XCTest/XCUITest suites.</p></div></article>
+          <article class="job"><time>Feb 2022 - Feb 2023</time><div><h3>Mobile Application Developer – iOS</h3><p class="company">Spontaneous Enterprise</p><p>Sole developer who shipped a native Swift/UIKit app from inception to App Store release, while also maintaining a Xamarin Forms application.</p></div></article>
+          <article class="job"><time>2016 - 2022</time><div><h3>Mobile &amp; iOS Developer</h3><p class="company">Intricare Technologies · Stemmons Business Services · Kit Solution</p><p>Built native Swift and UIKit modules, cross-platform Xamarin.Forms features, and integrations using Apple frameworks (ARKit, HealthKit) and REST services.</p></div></article>
         </div>
       </div>
     </section>
@@ -88,7 +89,19 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="wrap"><h2>Let’s connect.</h2><p>If you’d like to discuss an iOS role or a mobile product, you can reach me by email or LinkedIn.</p><a class="button" href="mailto:livedz05@gmail.com">livedz05@gmail.com</a><div class="contact-links"><a href="https://www.linkedin.com/in/mokshag" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/livedz" target="_blank" rel="noreferrer">GitHub</a><a href="Moksha-Zala-Resume.pdf" download>Download CV</a></div></div>
+      <div class="wrap">
+        <h2>Let’s connect.</h2>
+        <p>If you’d like to discuss an iOS role or a mobile product, you can reach me by email or LinkedIn.</p>
+        <a class="button" href="mailto:livedz05@gmail.com">livedz05@gmail.com</a>
+        <div class="contact-links"><a href="https://www.linkedin.com/in/mokshag" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/livedz" target="_blank" rel="noreferrer">GitHub</a><a href="https://medium.com/@livedg05" target="_blank" rel="noreferrer">Medium</a><a href="Moksha-Zala-Resume.pdf" download>Download CV</a></div>
+
+        <div class="medium-card" id="writing">
+          <p class="label">Writing &amp; Learning</p>
+          <h3>Learning in public, one story at a time.</h3>
+          <p>I write about what I learn while shipping iOS apps, from Swift concurrency and testing to architecture trade-offs. I share what worked, what didn’t, and why, in the hope it saves another developer some time.</p>
+          <a class="button" href="https://medium.com/@livedg05" target="_blank" rel="noreferrer">Read my stories on Medium ↗</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer><div class="wrap foot"><span>© <span id="year"></span> Moksha Zala</span><span>Designed and built for the web.</span></div></footer>
